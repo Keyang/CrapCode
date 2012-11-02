@@ -1,0 +1,10 @@
+{
+    "name":"crapcode-backend",
+    "description":"crapcode system nodejs backend",
+    "version":"0.0.1",
+    "author":"keyang.xiang@gmail.com",
+    "dependencies":{
+        "winston":"0.6.2",
+        "mongodb":"1.1.11"
+    }
+}
