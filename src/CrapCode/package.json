@@ -2,9 +2,14 @@
     "name":"crapcode-backend",
     "description":"crapcode system nodejs backend",
     "version":"0.0.1",
-    "author":"keyang.xiang@gmail.com",
+    "author":"Keyang Xiang <keyang.xiang@gmail.com>",
     "dependencies":{
         "winston":"0.6.2",
-        "mongodb":"1.1.11"
+        "mongodb":"1.1.11",
+        "feedparser":"0.10.7",
+        "cron":"1.0.1"
+    },
+    "bin":{
+        "startCodeCrap":"./bin/start.sh"
     }
 }

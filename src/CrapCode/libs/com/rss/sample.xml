@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>codecrap.com latest</title><link>http://codecrap.com</link><description>Latest code snippets from codecrap.com</description><atom:link href="http://codecrap.com/content/feed/" rel="self"></atom:link><language>en-us</language><lastBuildDate>Fri, 02 Nov 2012 16:41:31 +0100</lastBuildDate>
+
+
+<item><title>codecrap.com - snippet #406</title><link>http://codecrap.com/content/406/</link><description>&lt;pre&gt;deviceContactIds[outerIntex].toUpperCase().equalsIgnoreCase("NULL") &lt;/pre&gt;</description><pubDate>Fri, 02 Nov 2012 16:41:31 +0100</pubDate><guid>http://codecrap.com/content/406/</guid></item>
+
+
+<item><title>codecrap.com - snippet #405</title><link>http://codecrap.com/content/405/</link><description>&lt;pre&gt;    if($_GET['linkScript'] == 1)
+        $oid = "LINK";
+    $oid = $_GET['oid'];&lt;/pre&gt;</description><pubDate>Fri, 02 Nov 2012 12:05:28 +0100</pubDate><guid>http://codecrap.com/content/405/</guid></item><item><title>codecrap.com - snippet #404</title><link>http://codecrap.com/content/404/</link><description>&lt;pre&gt;doSomeCalculations();
+doSomeCalculations(); //It is called again just in case&lt;/pre&gt;</description><pubDate>Fri, 02 Nov 2012 04:01:18 +0100</pubDate><guid>http://codecrap.com/content/404/</guid></item><item><title>codecrap.com - snippet #403</title><link>http://codecrap.com/content/403/</link><description>&lt;pre&gt;  //if texture is in the second loop and the texture list only has one in it so [0] is only vaild fill spec and normal with zeroes 
+   if (iTextures == 0) 
+   { 
+    //Spec name size 
+    binStream.write((char*)0, sizeof(char*)); 
+    //Spec name 
+    binStream.write((char*)0, sizeof(char*)); 
+    //Normal name size 
+    binStream.write((char*)0, sizeof(char*)); 
+    //Normal name 
+    binStream.write((char*)0, sizeof(char*)); 
+    break; 
+   } &lt;/pre&gt;</description><pubDate>Fri, 02 Nov 2012 03:32:00 +0100</pubDate><guid>http://codecrap.com/content/403/</guid></item><item><title>codecrap.com - snippet #400</title><link>http://codecrap.com/content/400/</link><description>&lt;pre&gt;if (player.hasPermission("se.block.smoke"))
+        if (block != Material.LEVER) {
+          if (block != Material.BED) {
+            if (block != Material.BED_BLOCK) {
+              if (block != Material.CACTUS) {
+                if (block != Material.BRICK_STAIRS) {
+                  if (block != Material.BIRCH_WOOD_STAIRS) {
+                    if (block != Material.BREWING_STAND) {
+                      if (block != Material.CAKE) {
+                        if (block != Material.CAKE_BLOCK) {
+                          if (block != Material.CAULDRON) {
+                            if (block != Material.CHEST) {
+                              if (block != Material.CLAY) {
+                                if (block != Material.SAND) {
+                                  if (block != Material.BURNING_FURNACE) {
+                                    if (block != Material.COBBLESTONE_STAIRS) {
+                                      if (block != Material.FENCE) {
+                                        if (block != Material.FENCE_GATE) {
+                                          if (block != Material.FIRE) {
+                                            if (block != Material.GRAVEL) {
+                                              if (block != Material.IRON_DOOR_BLOCK) {
+                                                if (block != Material.IRON_FENCE) {
+                                                  if (block != Material.IRON_DOOR) {
+                                                    if (block != Material.LADDER) {
+                                                      if (block != Material.MELON) {
+                                                        if (block != Material.LEAVES) {
+                                                          if (block != Material.LOCKED_CHEST) {
+                                                            if (block != Material.SANDSTONE_STAIRS) {
+                                                              if (block != Material.SMOOTH_STAIRS) {
+                                                                if (block != Material.SPRUCE_WOOD_STAIRS) {
+                                                                  if (block != Material.TNT) {
+                                                                    if (block != Material.WOOD_DOUBLE_STEP) {
+                                                                      if (block != Material.WOOD_DOOR) {
+                                                                        if (block != Material.WEB) {
+                                                                          if (block != Material.ICE) {
+                                                                            if (block != Material.SNOW_BLOCK) {
+                                                                              if (block != Material.SNOW) {
+                                                                                if (block != Material.WATER_LILY) {
+                                                                                  if (block != Material.TORCH) {
+                                                                                    if (block != Material.REDSTONE_WIRE) {
+                                                                                      if (block != Material.YELLOW_FLOWER) {
+                                                                                        if (block != Material.RED_ROSE) {
+                                                                                          if (block != Material.PAINTING) {
+                                                                                            if (block != Material.RAILS) {
+                                                                                              if (block != Material.POWERED_RAIL) {
+                                                                                                if (block != Material.DETECTOR_RAIL) {
+                                                                                                  if (block != Material.DEAD_BUSH) {
+                                                                                                    if (block != Material.GRASS) {
+                                                                                                      if (block != Material.NETHER_BRICK_STAIRS) {
+                                                                                                        if (block != Material.NETHER_FENCE) {
+                                                                                                          if (block != Material.NETHER_WARTS) {
+                                                                                                            if (block != Material.HUGE_MUSHROOM_1) {
+                                                                                                              if (block != Material.HUGE_MUSHROOM_2) {
+                                                                                                                if (block != Material.BROWN_MUSHROOM) {
+                                                                                                                  if (block != Material.GLASS) {
+                                                                                                                    if (block != Material.JUNGLE_WOOD_STAIRS) {
+                                                                                                                      if (block != Material.WATER) {
+                                                                                                                        if (block != Material.SUGAR_CANE_BLOCK) {
+                                                                                                                          if (block != Material.WOOD_DOUBLE_STEP) {
+                                                                                                                            if (block != Material.WALL_SIGN) {
+                                                                                                                              if (block != Material.WOOD_PLATE) {
+                                                                                                                                if (block != Material.STONE_PLATE) {
+                                                                                                                                  if (block != Material.STONE_BUTTON) {
+                                                                                                                                    if (block != Material.WOOD_STAIRS) {
+                                                                                                                                      if (block != Material.TRAP_DOOR) {
+                                                                                                                                        if (block != Material.TRIPWIRE) {
+                                                                                                                                          if (block != Material.TRIPWIRE_HOOK) {
+                                                                                                                                            if (block != Material.WOOD_STEP) {
+                                                                                                                                              if (block != Material.THIN_GLASS) {
+                                                                                                                                                if (block != Material.REDSTONE_TORCH_OFF) {
+                                                                                                                                                  if (block != Material.REDSTONE_TORCH_ON) {
+                                                                                                                                                    if (block != Material.SAPLING) {
+                                                                                                                                                      String s = new SerializableLocation(loc).unpack().toString();
+                                                                                                                                                      this.plugin.Blindeness.add(s);
+                                                                                                                                                      this.plugin.Blindeness.save();
+                                                                                                                                                      if (this.String1 == this.plugin.getConfig().getString("_Block_Blindeness")) {
+                                                                                                                                                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] You Created a" + ChatColor.DARK_RED + " BlindenessEffectBlock" + ChatColor.DARK_GREEN + " at " + ChatColor.RED + s);
+                                                                                                                                                      }
+                                                                                                                                                      else
+                                                                                                                                                      {
+                                                                                                                                                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] You Created a" + ChatColor.DARK_RED + " BlindenessEffectBlock" + ChatColor.DARK_GREEN + " at " + ChatColor.RED + s);
+                                                                                                                                                      }
+                                                                                                                                                    } else {
+                                                                                                                                                      player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                                    }
+                                                                                                                                                  }
+                                                                                                                                                  else
+                                                                                                                                                    player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                                }
+                                                                                                                                                else
+                                                                                                                                                  player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                              }
+                                                                                                                                              else
+                                                                                                                                                player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                            }
+                                                                                                                                            else
+                                                                                                                                              player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                          }
+                                                                                                                                          else
+                                                                                                                                            player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                        }
+                                                                                                                                        else
+                                                                                                                                          player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                      }
+                                                                                                                                      else
+                                                                                                                                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                    }
+                                                                                                                                    else
+                                                                                                                                      player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                  }
+                                                                                                                                  else
+                                                                                                                                    player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                                }
+                                                                                                                                else
+                                                                                                                                  player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                              }
+                                                                                                                              else
+                                                                                                                                player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                            }
+                                                                                                                            else
+                                                                                                                              player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                          }
+                                                                                                                          else
+                                                                                                                            player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                        }
+                                                                                                                        else
+                                                                                                                          player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                      }
+                                                                                                                      else
+                                                                                                                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                    }
+                                                                                                                    else
+                                                                                                                      player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                  }
+                                                                                                                  else
+                                                                                                                    player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                                }
+                                                                                                                else
+                                                                                                                  player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                              }
+                                                                                                              else
+                                                                                                                player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                            }
+                                                                                                            else
+                                                                                                              player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                          }
+                                                                                                          else
+                                                                                                            player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                        }
+                                                                                                        else
+                                                                                                          player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                      }
+                                                                                                      else
+                                                                                                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                    }
+                                                                                                    else
+                                                                                                      player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                  }
+                                                                                                  else
+                                                                                                    player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                                }
+                                                                                                else
+                                                                                                  player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                              }
+                                                                                              else
+                                                                                                player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                            }
+                                                                                            else
+                                                                                              player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                          }
+                                                                                          else
+                                                                                            player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                        }
+                                                                                        else
+                                                                                          player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                      }
+                                                                                      else
+                                                                                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                    }
+                                                                                    else
+                                                                                      player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                  }
+                                                                                  else
+                                                                                    player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                                }
+                                                                                else
+                                                                                  player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                              }
+                                                                              else
+                                                                                player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                            }
+                                                                            else
+                                                                              player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                          }
+                                                                          else
+                                                                            player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                        }
+                                                                        else
+                                                                          player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                      }
+                                                                      else
+                                                                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                    }
+                                                                    else
+                                                                      player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                  }
+                                                                  else
+                                                                    player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                                }
+                                                                else
+                                                                  player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                              }
+                                                              else
+                                                                player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                            }
+                                                            else
+                                                              player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                          }
+                                                          else
+                                                            player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                        }
+                                                        else
+                                                          player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                      }
+                                                      else
+                                                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                    }
+                                                    else
+                                                      player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                  }
+                                                  else
+                                                    player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                                }
+                                                else
+                                                  player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                              }
+                                              else
+                                                player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                            }
+                                            else
+                                              player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                          }
+                                          else
+                                            player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                        }
+                                        else
+                                          player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                      }
+                                      else
+                                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                    }
+                                    else
+                                      player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                  }
+                                  else
+                                    player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                                }
+                                else
+                                  player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                              }
+                              else
+                                player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                            }
+                            else
+                              player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                          }
+                          else
+                            player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                        }
+                        else
+                          player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                      }
+                      else
+                        player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                    }
+                    else
+                      player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                  }
+                  else
+                    player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+                }
+                else
+                  player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+              }
+              else
+                player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+            }
+            else
+              player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+          }
+          else
+            player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+        }
+        else
+          player.sendMessage(ChatColor.DARK_GREEN + "[SpecialEffects] Can't" + ChatColor.DARK_RED + " create a EffectBlock" + ChatColor.DARK_GREEN + " Using this material");
+    }
+  }&lt;/pre&gt;</description><pubDate>Fri, 02 Nov 2012 03:09:46 +0100</pubDate><guid>http://codecrap.com/content/400/</guid></item><item><title>codecrap.com - snippet #398</title><link>http://codecrap.com/content/398/</link><description>&lt;pre&gt;// FUUU computer, it works well on my head!
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    int n, factorial, i;
+    scanf("%d", &amp;n);
+    factorial = 1;
+    for(i = 2; i &lt;= n; i++); // LOL
+    {
+      factorial = factorial * i;
+    }
+    printf("your factorial is: %d\n", factorial);
+    return 0;
+}
+&lt;/pre&gt;</description><pubDate>Thu, 01 Nov 2012 15:59:32 +0100</pubDate><guid>http://codecrap.com/content/398/</guid></item><item><title>codecrap.com - snippet #397</title><link>http://codecrap.com/content/397/</link><description>&lt;pre&gt;/**
+	 * Sets the name.
+	 * 
+	 * @param name
+	 *            the name to set
+	 */
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	&lt;/pre&gt;</description><pubDate>Thu, 01 Nov 2012 13:53:13 +0100</pubDate><guid>http://codecrap.com/content/397/</guid></item><item><title>codecrap.com - snippet #395</title><link>http://codecrap.com/content/395/</link><description>&lt;pre&gt;static public void assertEquals(String actual, String expected, String message) {
+    assertEquals((Object) actual, (Object) expected, message);
+  }&lt;/pre&gt;</description><pubDate>Thu, 01 Nov 2012 12:58:53 +0100</pubDate><guid>http://codecrap.com/content/395/</guid></item><item><title>codecrap.com - snippet #394</title><link>http://codecrap.com/content/394/</link><description>&lt;pre&gt;public class UnexpectedException extends RuntimeException {
+&lt;/pre&gt;</description><pubDate>Thu, 01 Nov 2012 12:55:37 +0100</pubDate><guid>http://codecrap.com/content/394/</guid></item><item><title>codecrap.com - snippet #387</title><link>http://codecrap.com/content/387/</link><description>&lt;pre&gt;@echo off
+title N-Star
+echo Star of...
+echo Chicken Invaders 2
+pause
+exit&lt;/pre&gt;</description><pubDate>Wed, 31 Oct 2012 21:45:59 +0100</pubDate><guid>http://codecrap.com/content/387/</guid></item></channel></rss>

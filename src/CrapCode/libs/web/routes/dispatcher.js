@@ -33,10 +33,17 @@ module.exports=function(req,res,cb){
             if (err){
                 logger.error(err);
                 res.statusCode=500;
-                res.end("<h1>500 Internal Error</h1>"+err);
+                res.setHeader("Content-Type","text/html");
+                res.end("<h1>500 Internal Error</h1>"+"<pre>"+err+"</pre>");
                 cb(err);
             }else{
                 statusCode=statusCode?statusCode:200;
+                if (headers ==undefined){
+                    headers={};
+                }
+                headers['Content-Type']="application/json";
+                headers['X-Powered-By']="CrapCode Script";
+                headers['Server']="Crap Server";
                 res.writeHead(statusCode,headers);
                 res.write(resData);
                 res.end();

@@ -1,3 +1,3 @@
 var crapServer=require("./server");
 
-crapServer.startServer();
+module.exports=crapServer;

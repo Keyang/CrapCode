@@ -1,1 +1,4 @@
-module.exports=require("./index");
+module.exports={
+    db:require("./db"),
+    cols:require("./collections")
+}

@@ -17,7 +17,7 @@ route.prototype.route=function(query,data,cb){
         this.query=query;
         this.dispatch(cb);    
     }catch(e){
-        cb(e);
+        cb(e.stack);
     }
     
 }
@@ -30,7 +30,20 @@ route.prototype.dispatch=function(cb){
             param[key]=this.defaultQuery[key];
         }
     }
-    this.com(param,cb);
+    this.com(param,function(err,res,status,headers){
+        if (err){
+            cb (err);
+        }else{
+            var resData=res;
+            if (typeof res =="object"){
+                resData=JSON.stringify(res);
+            }
+            if (typeof status == "undefined"){
+                status=200;
+            }
+            cb(null,resData,status,headers);
+        }
+    });
 }
 
 module.exports=route;
