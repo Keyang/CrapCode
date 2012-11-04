@@ -1,0 +1,19 @@
+<script type="html/template" id="listItemTemplate">
+            
+<li class="listitem">
+    <div class="listitem_header">
+        <span class="listitem_date"><%=dt.getFullYear()%>年<%=dt.getMonth()+1%>月<%=dt.getDate()%>日 <%=dt.getHours()%>:<%=dt.getMinutes()%>:<%=dt.getSeconds()%></span>
+        <span class="listitem_author">作者: <%=author%></span>
+        <span class="listitem_type">代码类型: <%=type%></span>
+        <span>
+            <img class="thumb_up" src="./images/thumbup.png"/>
+            <span class="like_num <%=likenum>=0?'positive':'negative'%>"><%=likenum%></span>
+            <img class="thumb_down" src="./images/thumbdown.png"/>
+        </span>
+    </div>
+    <div class="code">
+
+    </div>
+</li>
+
+</script>

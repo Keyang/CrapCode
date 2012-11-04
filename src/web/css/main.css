@@ -1,0 +1,134 @@
+html{
+    background:#090a36;
+}
+
+body{
+    width:1024px;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+a img{
+    border:none;
+}
+.container{
+    width:851px;
+    margin-left:auto;
+    margin-right: auto;
+}
+#bg{
+    background: url(../images/bg.png) no-repeat;
+    position:fixed;
+    width:967px;
+    height:833px;
+    left:50%;
+    margin-left:-483px;
+    top:46px;
+    z-index:-1;
+}
+
+#header{
+    left:0px;
+    right:0px;
+    top:0px;
+    height:89px;
+    border-bottom: 1px solid #1f6bb9;
+    position:fixed;
+}
+
+#header .container{
+     padding-top:23px; 
+     vertical-align: middle;
+     position:relative;
+     height:100%;
+     box-sizing:border-box;
+     -moz-box-sizing:border-box;
+
+}
+#header #logo{
+    vertical-align: middle;
+}
+#header .menu_item {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    margin-left:25px;
+    margin-right:5px;
+}
+#header #board{
+    background:url(../images/board.png) no-repeat;
+    width:200px;
+    height:118px;
+    position:absolute;
+    right:30px;
+    top:23px;
+    -webkit-box-shadow:  1px 4px 5px 5px ;
+    box-shadow:  1px 4px 5px 5px ;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    padding-top:37px;
+    padding-left:8px;
+    padding-right:8px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5em;
+    
+}
+#body.container{
+    margin-top:120px;
+
+}
+ul#list{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+li.listitem{
+    width:100%;
+    border:1px solid #1f6bb9;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background:#000a28;
+    overflow: hidden;
+}
+.listitem_header{
+    background:#0e1d48;
+    border-bottom:1px solid white;
+    height:45px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    padding-top:10px;
+
+}
+.listitem_header>span{
+    color:white;
+
+    padding-left:30px;
+    font-size:14px;
+    font-weight: bold;
+}
+.listitem_header img{
+    vertical-align: middle;
+}
+.listitem_header .like_num{
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:1px;
+    padding-bottom:1px;
+    border:1px solid #1f6bb9;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+
+}
+.listitem_header .like_num.positive{
+    background: #c3f2b8;
+    color:#3dac4a;
+}
+.listitem_header .like_num.negative{
+    background: #df1a1e;
+    color:#f4bba7;
+}
+

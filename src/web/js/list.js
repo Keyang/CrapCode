@@ -1,0 +1,3 @@
+crapCode.on("ready",function(){
+    
+});
