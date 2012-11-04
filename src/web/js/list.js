@@ -1,5 +1,5 @@
 crapCode.on("ready",function(){
-    $.get("/list",function(resArr){
+    $.get("/api/list",function(resArr){
         for (var i=0;i<resArr.length;i++){
             var res=resArr[i];
             var data={
