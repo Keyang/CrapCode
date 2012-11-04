@@ -36,6 +36,8 @@ a img{
     height:89px;
     border-bottom: 1px solid #1f6bb9;
     position:fixed;
+    background: #000a28;
+    z-index: 1000;
 }
 
 #header .container{
@@ -92,6 +94,7 @@ li.listitem{
     border-radius: 5px;
     background:#000a28;
     overflow: hidden;
+    margin-bottom:30px;
 }
 .listitem_header{
     background:#0e1d48;
@@ -132,3 +135,8 @@ li.listitem{
     color:#f4bba7;
 }
 
+.code{
+    color:#ccc;
+    padding-left:20px;
+    padding-right:20px;
+}

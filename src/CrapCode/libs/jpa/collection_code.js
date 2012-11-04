@@ -24,7 +24,7 @@ CodeCollection.prototype.list=function(skip,order,conditions,cb){
     if (order == "best"){
         sortField="like";
     }
-    var res=this.collection.find(conditions).skip(skip).limit(10).sort([sortField,"desc"]);
+    var res=this.collection.find(conditions).skip(skip).limit(10).sort([[sortField,"desc"]]);
     res.toArray(cb);
 }
 CodeCollection.prototype.listActive=function(skip,order,cb){
@@ -42,7 +42,7 @@ CodeCollection.prototype.addCode=function(codeRaw,codeType,submitDateTime,cb){
         data.submitDateTime=new Date();
     }
     if (codeType === undefined){
-        codeType="NONE"
+        codeType="text"
     }
     var escapedCodeRaw=codeRaw.replace(/</g,"&lt;").replace(/>/g,"&gt;");
     data.codeRaw=escapedCodeRaw;
@@ -51,6 +51,8 @@ CodeCollection.prototype.addCode=function(codeRaw,codeType,submitDateTime,cb){
     data.hash=hashmd5.digest("hex");
     data.author=null;
     data.comment=[];
+    data.codeType=codeType.toLowerCase();
+    data.submitDateTime=submitDateTime;
     this.insert(data,cb);
 }
 CodeCollection.prototype.isExisted=function(codeRaw,cb){

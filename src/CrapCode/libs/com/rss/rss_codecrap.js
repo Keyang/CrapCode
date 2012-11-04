@@ -8,7 +8,9 @@ function run(){
     logger.info("Start to parse RSS:"+rss_url);
     parser.parseUrl(rss_url).on("article",function(article){
         var title=article.title;
-        var codeRaw=article.description;
+        //this may disrupt the code which has <pre> </pre>
+        var codeRaw=article.description.replace(/<pre>/g,"").replace(/<\/pre>/,"");
+        console.log(codeRaw);
         var submitDate=new Date(article.pubDate);
         logger.info("Store:"+title);
         codeCol.isExisted(codeRaw,function(err,res){
@@ -29,4 +31,5 @@ function run(){
         });
     });
 }
+run();
 module.exports=run;

@@ -19,7 +19,7 @@ crapCode.template=function(name,cb){
     });
 }
 
-
+crapCode.events={};
 crapCode.on=function(event,cb){
     if (!crapCode.events[event]){
         crapCode.events[event]=[];
