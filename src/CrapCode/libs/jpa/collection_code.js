@@ -1,7 +1,7 @@
 var Collection =require("./collection_abs.js");
 var name="code"; //collection name
 var crypto = require('crypto');
-
+var logger=require("../logger");
 
 // Code Collection definition:
 // {
@@ -43,7 +43,7 @@ CodeCollection.prototype.addCode=function(codeRaw,codeType,submitDateTime,cb){
             cb(err);
         }else{
             if (res){
-                logger.info("Duplicated entry. Skip it.");
+                logger.info("Duplicated entry. Skip it. Hash: "+hash);
             }else{
                 var data={};
                 data.createDate=new Date();

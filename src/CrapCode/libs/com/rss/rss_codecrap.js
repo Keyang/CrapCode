@@ -15,8 +15,10 @@ function run(){
         codeCol.addCode(codeRaw,undefined,submitDate,function(err,res){
             if (err){
                 logger.error(err);
+            }else{
+                logger.info("Stored: "+title);    
             }
-            logger.info("Stored: "+title);
+            
         });
     });
 }
