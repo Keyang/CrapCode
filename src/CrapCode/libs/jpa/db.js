@@ -18,5 +18,6 @@ function dbConnect(){
     });
 }
 
+dbConnect();
 
 module.exports=db;
