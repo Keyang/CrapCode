@@ -34,43 +34,41 @@ CodeCollection.prototype.listActive=function(skip,order,cb){
     this.list(skip,order,condition,cb);
 }
 CodeCollection.prototype.addCode=function(codeRaw,codeType,submitDateTime,cb){
-    var data={};
-    data.createDate=new Date();
-    data.status=0;
-    data.like=0;
-    if (submitDateTime === undefined){
-        data.submitDateTime=new Date();
-    }
-    if (codeType === undefined){
-        codeType="text"
-    }
-    var escapedCodeRaw=codeRaw.replace(/</g,"&lt;").replace(/>/g,"&gt;");
-    data.codeRaw=escapedCodeRaw;
     var hashmd5=crypto.createHash('md5');
     hashmd5.update(codeRaw);
-    data.hash=hashmd5.digest("hex");
-    data.author=null;
-    data.comment=[];
-    data.codeType=codeType.toLowerCase();
-    data.submitDateTime=submitDateTime;
-    this.insert(data,cb);
-}
-CodeCollection.prototype.isExisted=function(codeRaw,cb){
-    var hashmd5=crypto.createHash('md5');
-    hashmd5.update(codeRaw);
-    var codeHash=hashmd5.digest("hex");
-    this.readByCol({"hash":codeHash},function(err,res){
+    var hash=hashmd5.digest("hex");
+    var that=this;
+    this.readByCol({"hash":hash},function(err,res){
         if (err){
             cb(err);
         }else{
-            if (!err && res){
-                cb (null,true);
+            if (res){
+                logger.info("Duplicated entry. Skip it.");
             }else{
-                cb (null,false);
+                var data={};
+                data.createDate=new Date();
+                data.status=0;
+                data.like=0;
+                if (submitDateTime === undefined){
+                    data.submitDateTime=new Date();
+                }
+                if (codeType === undefined){
+                    codeType="text"
+                }
+                var escapedCodeRaw=codeRaw.replace(/</g,"&lt;").replace(/>/g,"&gt;");
+                data.codeRaw=escapedCodeRaw;
+                
+                data.hash=hash;
+                data.author=null;
+                data.comment=[];
+                data.codeType=codeType.toLowerCase();
+                data.submitDateTime=submitDateTime;
+                that.insert(data,cb);
             }
         }
-        
     });
+   
 }
+
 
 module.exports=new CodeCollection;

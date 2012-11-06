@@ -9,27 +9,15 @@ function run(){
     parser.parseUrl(rss_url).on("article",function(article){
         var title=article.title;
         //this may disrupt the code which has <pre> </pre>
-        var codeRaw=article.description.replace(/<pre>/g,"").replace(/<\/pre>/,"");
-        console.log(codeRaw);
+        var codeRaw=article.description.replace(/<pre>/g,"").replace(/<\/pre>/g,"");
         var submitDate=new Date(article.pubDate);
         logger.info("Store:"+title);
-        codeCol.isExisted(codeRaw,function(err,res){
+        codeCol.addCode(codeRaw,undefined,submitDate,function(err,res){
             if (err){
                 logger.error(err);
-            }else{
-                if (res){
-                    logger.info("Duplicated entry. Skip it.");
-                }else{
-                    codeCol.addCode(codeRaw,undefined,submitDate,function(err,res){
-                        if (err){
-                            logger.error(err);
-                        }
-                        logger.info("Stored: "+title);
-                    });
-                }
             }
+            logger.info("Stored: "+title);
         });
     });
 }
-run();
 module.exports=run;
