@@ -24,14 +24,15 @@ CodeCollection.prototype.list=function(skip,order,conditions,cb){
     if (order == "best"){
         sortField="like";
     }
-    var res=this.collection.find(conditions).skip(skip).limit(10).sort([[sortField,"desc"]]);
-    res.toArray(cb);
+    this.collection.find(conditions).skip(skip).limit(10).sort([[sortField,"desc"]]).toArray(cb);
 }
 CodeCollection.prototype.listActive=function(skip,order,cb){
     var condition={
         "status":1
     }
-    this.list(skip,order,condition,cb);
+    this.list(skip,order,condition,function(err,res){
+        cb(err,res);
+    });
 }
 CodeCollection.prototype.addCode=function(codeRaw,codeType,submitDateTime,cb){
     var hashmd5=crypto.createHash('md5');
@@ -44,6 +45,7 @@ CodeCollection.prototype.addCode=function(codeRaw,codeType,submitDateTime,cb){
         }else{
             if (res){
                 logger.info("Duplicated entry. Skip it. Hash: "+hash);
+                cb(null,null);
             }else{
                 var data={};
                 data.createDate=new Date();

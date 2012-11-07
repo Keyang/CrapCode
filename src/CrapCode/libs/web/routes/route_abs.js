@@ -24,11 +24,10 @@ route.prototype.route=function(query,data,cb){
 route.prototype.dispatch=function(cb){
     var param={};
     for (var key in this.defaultQuery){
-        if ("undefined" != typeof this.query[key] ){
-            param[key]=this.query[key];
-        }else{
             param[key]=this.defaultQuery[key];
-        }
+    }
+    for (var key in this.query){
+        param[key]=this.query[key];
     }
     this.com(param,function(err,res,status,headers){
         if (err){

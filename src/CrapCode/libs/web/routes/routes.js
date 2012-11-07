@@ -12,7 +12,8 @@ var route_index=createRoute({
     "skip":0,
     "order":"latest"
 },"/code/list");
-
+var route_uploadcode=createRoute({
+},"/code/upload");
 
 
 var routes={
@@ -20,7 +21,7 @@ var routes={
         "/list":route_index
     },
     "post":{
-
+        "/uploadcode":route_uploadcode
     }
 }
 

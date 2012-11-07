@@ -37,15 +37,20 @@ function logRequest(req,res,time){
     var method=req.method;
     var url=req.url;
     var statusCode=res.statusCode;
-    var ip=req.connection.address().address;
-    var logTmp="{method} {url} from {ip}  {statusCode} {time}ms"
+    try{
+         var ip=req.connection.address().address;
+        var logTmp="{method} {url} from {ip}  {statusCode} {time}ms"
 
-    logger.log("info", logTmp.replace("{method}",method)
-        .replace("{url}",url)
-        .replace("{statusCode}",statusCode)
-        .replace("{time}",time)
-        .replace("{ip}",ip)
-    );
+        logger.log("info", logTmp.replace("{method}",method)
+            .replace("{url}",url)
+            .replace("{statusCode}",statusCode)
+            .replace("{time}",time)
+            .replace("{ip}",ip)
+        );
+    }catch (e){
+        logger.error(e.stack);
+    }
+   
 }
 
 module.exports={
