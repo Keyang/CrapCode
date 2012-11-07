@@ -1,0 +1,51 @@
+#uploadCode{
+   width:780px;
+   height:530px;
+   border:2px solid #1f6bb9;
+   border-top:none;
+   top:0;
+   left:50%;
+   margin-left:-390px;
+   background: #000a28;
+}
+#uploadCode .wrapper{
+    padding:20px;
+    color:white;
+    border-bottom:1px solid #ccc;
+}
+#codeUploader {
+    padding-left:10px;
+}
+#codeUploader label{
+    display: block;
+    
+    font-size:1.3em;
+    color:#ccc;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+#codeUploader select#codeLanguage{
+    height:30px;
+    line-height:2em;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:1.2em;
+    background:#ccc;
+}
+
+#codeUploader textarea#crapcode{
+    background: #ccc;
+    width:95%;
+    height:252px;
+    font-size:1.3em;
+}
+#uploadCode #btn_wrapper{
+    padding:11px;
+    text-align: right;
+}
+#uploadCode .button{
+    height:30px;
+    width:60px;
+    background:#ccc;
+}
