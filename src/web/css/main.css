@@ -150,10 +150,12 @@ li.listitem{
     color:#ccc;
     padding-left:20px;
     padding-right:20px;
-    max-height: 400px;
-    overflow-y:auto; 
-}
+    
 
+}
+.syntaxhighlighter{
+    max-height:400px; 
+}
 .modal_bg{
     position:fixed;
     top:0px;
