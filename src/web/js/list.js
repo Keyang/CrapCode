@@ -2,6 +2,9 @@ var currentIndex=null;
 crapCode.currentIndex=0;
 crapCode.order="submitDateTime";
 crapCode.on("ready",function(){
+  if (window.location.toString().indexOf("/best")>0){
+    crapCode.order="best";
+  }
     var that=this;
      this.template("listItem",function(){
         that.loadList(0,crapCode.order);
@@ -24,7 +27,7 @@ crapCode.on("ready",function(){
 });
 
 crapCode.loadList=function(skip,order,cb){
-       $.get("/api/list?skip="+skip,function(resArr){
+       $.get("/api/list?skip="+skip+"&order="+order,function(resArr){
         for (var i=0;i<resArr.length;i++){
             var res=resArr[i];
             var type=res.codeType?res.codeType.toLowerCase():"text";

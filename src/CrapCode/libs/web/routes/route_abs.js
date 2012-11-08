@@ -5,7 +5,12 @@ function route(defaultQuery,com){
 };
 route.prototype.init=function(defaultQuery,com){
     this.defaultQuery=defaultQuery;
-    this.com=require("../../com"+com);
+    if (typeof com ==="function"){
+        this.com=com;
+    }else{
+        this.com=require("../../com"+com);    
+    }
+    
 }
 route.prototype.route=function(query,data,cb){
     try{

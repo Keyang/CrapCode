@@ -15,10 +15,17 @@ var route_index=createRoute({
 var route_uploadcode=createRoute({
 },"/code/upload");
 
+var route_rss=createRoute({},function(param,cb){
+    var rssFeeds=require("../../com/rss").getRSS();
+    cb(null,rssFeeds,200,{
+        "Content-Type":"application/rss+xml; charset=utf-8"
+    });
+});
 
 var routes={
     "get":{
-        "/list":route_index
+        "/list":route_index,
+        "/rss":route_rss
     },
     "post":{
         "/uploadcode":route_uploadcode

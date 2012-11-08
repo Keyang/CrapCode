@@ -41,7 +41,7 @@ module.exports=function(req,res,cb){
                 if (headers ==undefined){
                     headers={};
                 }
-                headers['Content-Type']="application/json";
+                headers['Content-Type']=headers['Content-Type']?headers['Content-Type']:"application/json; charset=utf-8";
                 headers['X-Powered-By']="CrapCode Script";
                 headers['Server']="Crap Server";
                 res.writeHead(statusCode,headers);

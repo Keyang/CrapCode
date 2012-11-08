@@ -20,11 +20,11 @@ var CodeCollection=function(){};
 CodeCollection.prototype=new Collection(name);
 
 CodeCollection.prototype.list=function(skip,order,conditions,cb){
-    var sortField="submitDateTime";
+    var sortField=[["submitDateTime","desc"]];
     if (order == "best"){
-        sortField="like";
+        sortField=[["like","desc"],["submitDateTime","desc"]];
     }
-    this.collection.find(conditions).skip(skip).limit(10).sort([[sortField,"desc"]]).toArray(cb);
+    this.collection.find(conditions).skip(skip).limit(10).sort(sortField).toArray(cb);
 }
 CodeCollection.prototype.listActive=function(skip,order,cb){
     var condition={

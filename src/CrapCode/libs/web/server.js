@@ -6,6 +6,7 @@ var http=require("http");
 var server=null;
 var logger=require ("../logger");
 var routes=require("./routes");
+var emitter=require("../events");
 function startServer(){
     if (server === null){
         server=http.createServer();
@@ -19,7 +20,9 @@ function startServer(){
         });
         server.listen(3000);
         logger.info("Server started at port 3000");
+
     }
+    emitter.emit("webserverready");
     
 }
 
