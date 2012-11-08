@@ -18,6 +18,12 @@ a img{
     margin-left:auto;
     margin-right: auto;
 }
+#fork_me{
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 5000;
+}
 #bg{
     background: url(../images/bg.png) no-repeat;
     position:fixed;
@@ -33,7 +39,7 @@ a img{
     left:0px;
     right:0px;
     top:0px;
-    height:89px;
+    height:69px;
     border-bottom: 1px solid #1f6bb9;
     position:fixed;
     background: #000a28;
@@ -41,7 +47,7 @@ a img{
 }
 
 #header .container{
-     padding-top:23px; 
+     padding-top:9px; 
      vertical-align: middle;
      position:relative;
      height:100%;
@@ -51,6 +57,7 @@ a img{
 }
 #header #logo{
     vertical-align: middle;
+
 }
 #header .menu_item {
     text-decoration: none;
@@ -58,6 +65,10 @@ a img{
     font-weight: bold;
     margin-left:25px;
     margin-right:5px;
+}
+#header a.menu_item:hover{
+    -webkit-box-shadow:  2px 2px 70px 3px #efefef;
+     box-shadow:  2px 2px 70px 3px #efefef;
 }
 #header #board{
     background:url(../images/board.png) no-repeat;
@@ -79,7 +90,7 @@ a img{
     
 }
 #body.container{
-    margin-top:120px;
+    margin-top:80px;
 
 }
 ul#list{
@@ -139,6 +150,8 @@ li.listitem{
     color:#ccc;
     padding-left:20px;
     padding-right:20px;
+    max-height: 400px;
+    overflow-y:auto; 
 }
 
 .modal_bg{

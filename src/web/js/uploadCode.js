@@ -12,6 +12,13 @@ crapCode.on("ready",function(){
             }
         });
     });
+    //capture location url.
+    var currentLoc=window.location.toString();
+    if (currentLoc.indexOf("#uploadCode")>0){
+        setTimeout(function(){
+            that.dlg("uploadCode",true);
+        },100);
+    }
 });
 crapCode.cleanUpload=function(){
     setTimeout(function(){
