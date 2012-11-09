@@ -2,7 +2,11 @@
             
 <li class="listitem">
     <div class="listitem_header">
-        <span class="listitem_date"><%=dt.getFullYear()%>年<%=dt.getMonth()+1%>月<%=dt.getDate()%>日 <%=dt.getHours()%>:<%=dt.getMinutes()%>:<%=dt.getSeconds()%></span>
+        <span class="listitem_date">
+        <a href="/content#<%=hash%>">
+            <%=dt.getFullYear()%>年<%=dt.getMonth()+1%>月<%=dt.getDate()%>日 <%=dt.getHours()%>:<%=dt.getMinutes()%>:<%=dt.getSeconds()%>
+            </a>
+        </span>
         <span class="listitem_author">作者: <%=author%></span>
         <span class="listitem_type">代码类型: <%=type%></span>
         <span>

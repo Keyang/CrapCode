@@ -2,6 +2,9 @@ var currentIndex=null;
 crapCode.currentIndex=0;
 crapCode.order="submitDateTime";
 crapCode.on("ready",function(){
+  if (window.location.toString().indexOf("/content")>0){
+    return;
+  }
   if (window.location.toString().indexOf("/best")>0){
     crapCode.order="best";
   }
@@ -37,7 +40,8 @@ crapCode.loadList=function(skip,order,cb){
                 type:type.toUpperCase(),
                 likenum:res.like,
                 code:res.codeRaw,
-                codetype:type
+                codetype:type,
+                hash:res.hash
             }
             var itemHtml=tmpl("listItemTemplate",data);
             $("#list").append(itemHtml);

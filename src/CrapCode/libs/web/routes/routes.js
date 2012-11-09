@@ -22,10 +22,15 @@ var route_rss=createRoute({},function(param,cb){
     });
 });
 
+var route_one=createRoute({
+    "hash":null
+},"/code/loadone");
+
 var routes={
     "get":{
         "/list":route_index,
-        "/rss":route_rss
+        "/rss":route_rss,
+        "/one":route_one
     },
     "post":{
         "/uploadcode":route_uploadcode
