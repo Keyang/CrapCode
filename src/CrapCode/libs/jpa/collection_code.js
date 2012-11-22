@@ -34,7 +34,19 @@ CodeCollection.prototype.listActive=function(skip,order,cb){
         cb(err,res);
     });
 }
-CodeCollection.prototype.addCode=function(codeRaw,codeType,submitDateTime,cb){
+CodeCollection.prototype.addCode=function(codeRaw,codeType,submitDateTime,active,cb){
+    var status=0;
+    if (typeof cb == "undefined"){
+        cb=active;
+        active=null;
+    }
+    if (typeof active =="boolean"){
+        if (active){
+            status=1;
+        }else{
+            status=0;
+        }
+    }
     var hashmd5=crypto.createHash('md5');
     hashmd5.update(codeRaw);
     var hash=hashmd5.digest("hex");
@@ -49,7 +61,7 @@ CodeCollection.prototype.addCode=function(codeRaw,codeType,submitDateTime,cb){
             }else{
                 var data={};
                 data.createDate=new Date();
-                data.status=0;
+                data.status=status;
                 data.like=0;
                 if (submitDateTime === undefined){
                     data.submitDateTime=new Date();

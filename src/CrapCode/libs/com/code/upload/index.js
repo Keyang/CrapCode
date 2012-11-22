@@ -39,7 +39,7 @@ function uploadCode(param,cb){
     var codeType=param.codeLanguage;
     var codeRaw=param.codeRaw;
     if (allowedCodeType[codeType] ==1){
-        codeCol.addCode(codeRaw,codeType,new Date(),function(err,res){
+        codeCol.addCode(codeRaw,codeType,new Date(),true,function(err,res){
             if (err){
                 cb(err,null);
             }else{

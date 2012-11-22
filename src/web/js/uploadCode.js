@@ -8,7 +8,7 @@ crapCode.on("ready",function(){
         var codeRaw=$("#crapcode").val();
         that.uploadCode(codeRaw,language,function(isSuccess){
             if (isSuccess){
-                that.dlg("uploadCode",false,that.cleanUpload);
+                window.location="/";
             }
         });
     });
@@ -48,7 +48,7 @@ crapCode.uploadCode=function(codeRaw,codeLanguage,cb){
         },
         success:function(res){
             if (res.success){
-                alert("代码上传成功！您的代码会经过审核后发布。");
+                alert("代码上传成功！");
                 if (cb){
                     cb(true);
                 }
