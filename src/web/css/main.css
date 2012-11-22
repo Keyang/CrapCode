@@ -103,16 +103,17 @@ li.listitem{
     border:1px solid #1f6bb9;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    background:#0F192A;
+    background:#1B2426;
     overflow: hidden;
     margin-bottom:30px;
+    color:#ccc;
 }
 li.listitem a{
-    color:white;
+    color:#ccc;
     
 }
 .listitem_header{
-    background:#0e1d48;
+    background:#333;
     border-bottom:1px solid white;
     height:45px;
     box-sizing:border-box;
@@ -121,11 +122,11 @@ li.listitem a{
 
 }
 .listitem_header>span{
-    color:white;
+    color:#ccc;
 
     padding-left:30px;
     font-size:14px;
-    font-weight: bold;
+    
 }
 .listitem_header img{
     vertical-align: middle;
@@ -154,11 +155,12 @@ li.listitem a{
     color:#ccc;
     padding-left:20px;
     padding-right:20px;
-    
+    font-size:0.8em;
+    line-height:2em;
 
 }
 .syntaxhighlighter{
-    max-height:400px; 
+    max-height:480px; 
 }
 .modal_bg{
     position:fixed;

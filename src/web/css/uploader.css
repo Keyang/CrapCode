@@ -28,9 +28,8 @@
 #codeUploader select#codeLanguage{
     height:30px;
     line-height:2em;
-    padding-top:10px;
-    padding-bottom:10px;
-    font-size:1.2em;
+    padding-top:3px;
+    padding-bottom:3px;
     background:#ccc;
 }
 
